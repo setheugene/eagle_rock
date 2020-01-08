@@ -1,0 +1,55 @@
+.section-container {
+  min-height: 65vh;
+}
+
+.archive-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__header {
+    margin: 75px 0 50px;
+    font-weight: 100;
+    font-size: 45px;
+    text-align: left;
+  }
+
+  .posts {
+    margin-bottom: 40px;
+  }
+
+  article {
+    width: 90%;
+    padding: 25px 30px;
+    border-right: 1px solid $color-darker;
+
+    .entry-summary {
+      margin-top: 25px;
+      line-height: 2;
+
+      a {
+        border: 1px solid $color-darker;
+        border-radius: 3px;
+        padding: 5px 5px;
+      }
+    }
+  }
+
+  .sidebar {
+    align-self: flex-start;
+    margin-top: 15%;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 15px;
+        border-bottom: 1px solid $color-darker;
+      }
+    }
+  }
+}

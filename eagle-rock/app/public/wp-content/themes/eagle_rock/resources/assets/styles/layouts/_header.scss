@@ -1,0 +1,62 @@
+.header .nav li {
+  @extend .nav-item;
+}
+
+.header .nav a {
+  @extend .nav-link;
+
+  padding: 0.2rem;
+}
+
+.header {
+  .row {
+    background-color: $color-darker;
+    display: block;
+    margin: 0;
+
+    .nav {
+      display: flex;
+    }
+
+    .main-menu__main {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 0 75px;
+      padding-bottom: 10px;
+
+      &--logo {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      img {
+        width: 75px;
+      }
+
+      p {
+        color: $color-lighter;
+        position: absolute;
+        font-weight: 100;
+        font-size: 35px;
+        margin-left: 6%;
+      }
+    }
+
+    .menu-item {
+      border: 1px solid transparent;
+      color: $color-lighter;
+      margin-right: 20px;
+
+      &:hover {
+        color: $color-light;
+        border-bottom: 1px solid $color-lighter;
+      }
+    }
+
+    a {
+      color: $color-lighter;
+    }
+  }
+}

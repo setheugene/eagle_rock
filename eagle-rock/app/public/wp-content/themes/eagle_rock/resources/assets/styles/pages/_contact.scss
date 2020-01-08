@@ -1,0 +1,54 @@
+.contact-us {
+  display: flex;
+  align-items: center;
+
+  &__left {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 130px;
+    width: 40%;
+
+    &--header {
+      margin-bottom: 30px;
+      font-size: 40px;
+      height: 55px;
+      color: $color-dark;
+    }
+
+    &--paragraph {
+      font-size: 17px;
+      padding: 25px 5px 0;
+    }
+
+    .ctaButton {
+      margin-top: 100px;
+      align-self: center;
+    }
+  }
+
+  &__right {
+    padding: 95px 75px 95px 75px;
+    margin: 0 auto;
+
+    form {
+      input,
+      textarea {
+        border-radius: 3px;
+        border-color: $color-light;
+      }
+    }
+
+    .wpcf7 {
+      &-submit {
+        border-radius: 5px;
+        background-color: $color-dark;
+        color: $color-lighter;
+        padding: 5px 10px;
+        margin-left: 90px;
+        width: 140px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.support-tithe {
+  display: flex;
+  align-items: center;
+  color: $color-lighter;
+  margin: 0 -20px 0 -20px;
+
+  &__left {
+    padding: 55px 50px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    margin-left: -30%;
+    padding-right: 20px;
+    text-align: right;
+    font-size: 40px;
+    height: 55px;
+    color: $color-dark;
+    background-color: $color-lighter;
+    border-radius: 5px;
+  }
+
+  &__paragraph {
+    font-size: 17px;
+    padding: 50px 25px 0;
+  }
+}
+
+.church-tithe-wp-element {
+  width: 50%;
+  padding: 95px 75px 95px 75px;
+  margin: 0 auto;
+}

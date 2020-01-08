@@ -1,0 +1,16 @@
+<?php $__env->startSection('content'); ?>
+  <?php while(have_posts()): ?> <?php the_post() ?>
+<div class="container single-product single-product-container">
+    <div class="single-product__left">
+        <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+        <img src="<?php echo $url ?>" />
+    </div>
+  <div class="single-product__right">
+    <?php echo $__env->make('partials.content-single-'.get_post_type(), array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php endwhile; ?>
+</div>
+</div>
+<?php wp_reset_postdata(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

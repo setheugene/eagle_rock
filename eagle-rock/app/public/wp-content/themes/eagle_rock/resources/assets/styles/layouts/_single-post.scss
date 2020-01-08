@@ -1,0 +1,45 @@
+.blog-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+  min-height: 65vh;
+
+  .blog-post {
+    width: 70%;
+    padding-right: 40px;
+    border-right: 1px solid $color-darker;
+    line-height: 2;
+
+    .entry-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    time {
+      display: none;
+    }
+
+    .byline {
+      display: none;
+    }
+  }
+
+  .sidebar {
+    position: relative;
+    width: 20%;
+
+    &-header {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 15px;
+        border-bottom: 1px solid $color-darker;
+      }
+    }
+  }
+}

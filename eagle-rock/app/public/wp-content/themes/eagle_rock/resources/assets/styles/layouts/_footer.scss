@@ -1,0 +1,51 @@
+.footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background-color: $color-dark;
+  color: $color-lighter;
+  font-weight: 100;
+
+  #menu-main-footer-menu {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+      margin-top: 10px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 125px;
+
+      .menu-item {
+        margin: 0 25px 10px 0;
+      }
+    }
+
+    .social {
+      margin-top: 40px;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  #mc_embed_signup {
+    background: transparent;
+    clear: left;
+    width: 100%;
+  }
+}
